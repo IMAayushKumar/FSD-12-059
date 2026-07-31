@@ -1,21 +1,18 @@
-# EventLoop
-"JS is Synchronous and single-threaded by default".
-## There can be async behavoir 
-- with broswerAPI - setTimeout,SetImmediate,nextTick
-- with promises.
-- with eventHandlers
-# Promises
+# File System(FS Module)
+    FS Module directley communicate to oprating system rather than browser the common opration on the file or folder .
+    #   File
+    1-Write File
+    2-Read File
+    3-Append File
+    #   Folder
+    1-mkdir/md
+    2-remdir/rm
+    3-readdir
+    #     File metadat
+    1-stat
+    2-lstat
+    3-rstat
+    #   Watch-watch/Unwatch
+    #Stream
+    All functions are promise so it must be called with await keyword.
 
-    Promises-A function not execeuted immediatley but it must be exececuted after a while. It has some status during the execuetion.At final it mat resolve()-success and reject()-Unsuccessful.
-
-# Callback
-    it is an another function that use an argument into first function.
-
-# JS-types
-    modern js is divided into 2 categories:
-    1-Common JS(.cjs)-support OOPS.-require Keyword
-    -first proirity (nextTick > Promises > setImmediate/setTimeout).
-
-    2-Module JS(.mjs)-follow modular approch OR using functoin-import.
-    -priority (Promise > nextTick > SetTimeout/setImmediate)
-    

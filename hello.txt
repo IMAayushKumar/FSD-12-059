@@ -1,0 +1,2 @@
+Hello JS
+FS is much easy than other.
