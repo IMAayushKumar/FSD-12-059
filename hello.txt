@@ -1,2 +1,4 @@
 Hello JS
 FS is much easy than other.
+FS is much easy than other.
+FS is much easy than other.
