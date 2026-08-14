@@ -1,5 +1,38 @@
 import Readline  from "readline/promises";
 import {stdin,stdout  } from "process";
+import { readFile,writeFile  } from "fs/promises";
+const FILE="product.json"
+const getCart= async()=>{
+    const data =await readFile(FILE,"utf-8")
+    return JSON.parse(data);
+}
+
+const saveCart= async(myCart)=>{
+    await writeFile(FILE,JSON.stringify(myCart,null,2));
+
+
+};
+
+const addTOCart=async(product)=>{
+    const myCart=getCart();
+    const isFound=myCart.find((item)=> item.id===product.id);
+    if(isFound){
+        isFound.qty+=product.qty;
+    }
+    else{
+        myCart.push(product);
+
+    }
+    await saveCart(myCart);
+    console.log(`product added/updated with id ${product.id} into cart `);
+};
+
+
+
+
+
+
+
 
 
 const main= async()=>{
@@ -15,7 +48,7 @@ const main= async()=>{
     choice = await cin.question("Enter your choice:")
     while(choice!=5);
     cin.close();
-    switch (choice) {
+    switch (Number(choice)) {
         case 1:
             console.log("Show Product")
             break;
