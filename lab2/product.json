@@ -9,12 +9,11 @@
     "id": "2",
     "name": "odessey",
     "price": 4.99,
-    "qty": 4
+    "qty": 5
   },
   {
-    "id": "3",
-    "name": "rasgulle ",
-    "price": 20.99,
-    "qty": 10000
+    "id": 1,
+    "price": 33.2,
+    "qty": 345
   }
 ]

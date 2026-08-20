@@ -28,6 +28,37 @@ const addToCart = async (product) => {
 const showCart = async () => {
   const data = await getCart();
   console.table(data);
+  // let total=0;
+  // for(let  i=0;i<data.length;i++){
+  //   total+=data[i].qty*data[i].price;
+  // }
+  // console.log("You have to pay :Rs.",total)
+  let total = 0;
+  total = data.reduce((item, t) => t + item.qty * item.price, 0); // faster than for loop used in future .
+  console.log("you have to pay :rs.", total);
+};
+
+const removeFromCart = async (pid) => {
+  const data = await getCart();
+  const count = data.length;
+  const newData = data.filter((item) => String(item.id) !== String(pid));
+  const newCount = newData.length;
+  if (count == newCount) {
+    console.log(`Product with id ${pid} not found `);
+  } else {
+    await saveCart(newData);
+    console.log(`product with id ${pid} deleted successfully `);
+  }
+};
+const updateCart = async (pid, value) => {
+  const data = await getCart();
+  const isFound = data.find((item) => String(item.id) === String(pid));
+  if (isFound) {
+    isFound.qty += value;
+    await saveCart(data);
+    console.log(`Product quantity updaetd succesfully `);
+  } else {
+  }
 };
 
 const main = async () => {
@@ -61,9 +92,14 @@ const main = async () => {
         break;
       case 3:
         console.log("remove product");
+        let pid = await cin.question("Enter your product id to remove: ");
+        await removeFromCart(Number(pid));
         break;
       case 4:
         console.log("Update product quantity");
+        let pid2 = await cin.question(`Enter product id to remove `);
+        let value = await cin.question("+1 increase,-1 decrese:");
+        await updateCart(Number(pid2), Number(value));
         break;
       case 5:
         console.log("See you later");
