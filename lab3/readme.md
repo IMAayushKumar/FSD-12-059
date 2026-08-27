@@ -16,6 +16,14 @@
     npm start- normal program
     npm run dev- execute the nodemon programm for devlopers-server reload automatically on thr behalf of devlopers 
     98% we use the [npm run dev]
+
+## http status code
+    200->OK
+    201->Created
+    400->Bad request
+    403->Forbidden
+    404->Not found
+    500-> Internal Server Error
     
 
     

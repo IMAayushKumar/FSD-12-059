@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Premium Laptop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #0096D6; /* HP Brand Blue */
+            color: #fff;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .hero {
+            background: #f4f7f6;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #0096D6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #007bb5;
+        }
+        .features {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background: #fff;
+        }
+        .feature-card {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid #0096D6;
+        }
+        .feature-card h3 {
+            color: #222;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HP Premium</h1>
+        <nav>
+            <a href="#features" style="color: white; text-decoration: none; font-weight: bold;">Explore Features</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Power meets elegance.</h2>
+        <p>Experience the ultimate combination of performance, sleek design, and all-day battery life with the newest HP laptop series.</p>
+        <a href="#buy" class="btn">Order Now</a>
+        <br>
+        <!-- Using a placeholder image of a sleek laptop for the HTML structure -->
+        <img src="https://images.unsplash.com/photo-1544731612-de7f96afe55f?auto=format&fit=crop&w=1000&q=80" alt="HP Laptop showcasing a sleek, modern design">
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature-card">
+            <h3>Blazing Performance</h3>
+            <p>Powered by the latest generation Intel® Core™ processors and ultra-fast SSD storage to handle heavy multitasking and creative workflows with ease.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Stunning Display</h3>
+            <p>Enjoy vibrant, true-to-life colors and deep contrasts on a micro-edge OLED display, perfect for streaming, designing, and browsing.</p>
+        </div>
+        <div class="feature-card">
+            <h3>All-Day Battery</h3>
+            <p>Stay unplugged longer with up to 14 hours of battery life. HP Fast Charge technology gets you back up to 50% in just 45 minutes.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Premium Design</h3>
+            <p>Crafted with an all-aluminum chassis, it's ultra-thin, incredibly lightweight, and engineered to look great wherever you take it.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HP Concept Page. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
