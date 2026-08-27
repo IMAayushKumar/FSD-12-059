@@ -13,6 +13,9 @@
     npm i <pacakage name>  install any pacakge
     npm unistall <pacakage name>  unistall any pacakage
     npm i <pacakge name> -D -for devloper purpose only 
+    npm start- normal program
+    npm run dev- execute the nodemon programm for devlopers-server reload automatically on thr behalf of devlopers 
+    98% we use the [npm run dev]
     
 
     
