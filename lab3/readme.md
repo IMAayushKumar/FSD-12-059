@@ -6,6 +6,13 @@
     3-Build REST APIs
     4-Non-blocking I/O
     5-Foundation of Express.jS
+
+
+    npm=node package manager
+    npm init -y  for making project 
+    npm i <pacakage name>  install any pacakge
+    npm unistall <pacakage name>  unistall any pacakage
+    npm i <pacakge name> -D -for devloper purpose only 
     
 
     
